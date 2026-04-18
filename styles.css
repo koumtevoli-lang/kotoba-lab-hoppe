@@ -189,7 +189,7 @@ h1, h2, h3, h4 {
 }
 
 .logo-img {
-    height: 73px; /* 文字サイズの高さに美しく収まるように調整 */
+    height: 70px; /* 文字サイズの高さに美しく収まるように調整 */
     width: auto; /* 四角い元の縦横比を一切崩さずキープ */
     object-fit: contain; /* 見切れ（切り取り）を完全防止！ */
     flex-shrink: 0;
