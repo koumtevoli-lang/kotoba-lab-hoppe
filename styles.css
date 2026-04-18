@@ -177,20 +177,21 @@ h1, h2, h3, h4 {
 }
 
 .logo {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--text-main);
     text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 16px;
 }
 
 .logo-img {
-    height: 38px;
-    width: 38px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
     object-fit: cover;
+    flex-shrink: 0;
 }
 
 .nav ul {
@@ -605,11 +606,3 @@ h1, h2, h3, h4 {
         border-bottom: none;
     }
     
-    .cta-box {
-        padding: 50px 20px;
-    }
-    
-    .cta-box h2 {
-        font-size: 1.8rem;
-    }
-}
