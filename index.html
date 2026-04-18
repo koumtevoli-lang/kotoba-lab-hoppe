@@ -24,7 +24,14 @@
                 <img src="images/29157_0.jpg" alt="ことばらぼ ほっぺ" class="logo-img">
                 ことばらぼ ほっぺ
             </a>
-            <nav class="nav">
+            
+            <button class="hamburger" id="js-hamburger" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav" id="js-nav">
                 <ul>
                     <li><a href="#concept">どんな教室？</a></li>
                     <li><a href="#services">支援の内容</a></li>
@@ -32,6 +39,7 @@
                     <li><a href="#fee">料金</a></li>
                     <li class="nav-social-wrap"><a href="https://da-shi-st.hatenablog.com/" target="_blank" rel="noopener noreferrer" class="nav-social" title="ブログ">✏️ ブログ</a></li>
                     <li class="nav-social-wrap"><a href="https://www.instagram.com/kotoba_lab_hoppe" target="_blank" rel="noopener noreferrer" class="nav-social" title="Instagram">📷 Instagram</a></li>
+                    <li class="nav-contact-wrap sp-only"><a href="#contact" class="btn btn-sm btn-accent nav-contact-btn">お問い合わせ</a></li>
                 </ul>
             </nav>
             <a href="#contact" class="btn btn-sm btn-accent hide-sp">お問い合わせ</a>
@@ -230,12 +238,3 @@
                     }
                 });
             }, observerOptions);
-
-            document.querySelectorAll('.fade-up').forEach((el) => {
-                observer.observe(el);
-            });
-        });
-    </script>
-</body>
-
-</html>
