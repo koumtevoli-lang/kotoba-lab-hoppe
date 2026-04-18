@@ -224,17 +224,49 @@
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
+        document.addEventListener('DOMContentLoaded', function() {
             // Hamburger menu logic
-            const hamburger = document.getElementById('js-hamburger');
-            const nav = document.getElementById('js-nav');
-            const navLinks = document.querySelectorAll('.nav a');
+            var hamburger = document.getElementById('js-hamburger');
+            var nav = document.getElementById('js-nav');
+            var navLinks = document.querySelectorAll('.nav a');
 
             if (hamburger && nav) {
-                hamburger.addEventListener('click', () => {
+                hamburger.addEventListener('click', function() {
                     hamburger.classList.toggle('active');
                     nav.classList.toggle('active');
                 });
 
-                for (let i = 0; i < navLinks.length; i++) {
-                    navLinks[i].addEventListener('click', () => {
+                for (var i = 0; i < navLinks.length; i++) {
+                    navLinks[i].addEventListener('click', function() {
+                        hamburger.classList.remove('active');
+                        nav.classList.remove('active');
+                    });
+                }
+            }
+
+            // Intersection Observer for animations
+            if (window.IntersectionObserver) {
+                var observerOptions = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.15
+                };
+
+                var observer = new IntersectionObserver(function(entries) {
+                    for (var j = 0; j < entries.length; j++) {
+                        if (entries[j].isIntersecting) {
+                            entries[j].target.classList.add('visible');
+                        }
+                    }
+                }, observerOptions);
+
+                var fadeEls = document.querySelectorAll('.fade-up');
+                for (var k = 0; k < fadeEls.length; k++) {
+                    observer.observe(fadeEls[k]);
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
