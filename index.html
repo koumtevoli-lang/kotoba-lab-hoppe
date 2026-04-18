@@ -1,614 +1,190 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
-
-    <meta name="google-site-verification" content="86cV23cT0Zqf2iOBX3tUtzOFQd4SVv6bja_5qFfNZ94" />
-    <title>ことばらぼ ほっぺ | 堺市・大阪の言語聴覚士 訪問支援・ことばの教室</title>
-    <meta name="description" content="堺市を拠点に、大阪府下の児童発達支援施設などに訪問し、子どものことばやコミュニケーションの発達を支える言語聴覚士の訪問支援です。ことばの教室。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ことばの教室 ことばらぼ ほっぺ</title>
+    <meta name="description" content="言葉の発達やコミュニケーションに不安のあるお子さまと保護者さまが、安心して通える「ことばらぼ ほっぺ」。専門スタッフがお子さまのペースに合わせて優しくサポートします。">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
-        rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4XGEW3L0GE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4XGEW3L0GE');
-</script>
-    <style>
-        /* Reset and Base Styles */
-        :root {
-            --text-color: #594a4e;
-            /* Warm dark brown-gray */
-            --heading-color: #96706d;
-            /* Muted reddish brown */
-            --bg-color: #faf8f5;
-            /* Warm off-white */
-            --accent-color: #dcb8a3;
-            /* Muted Beige/Apricot */
-            --accent-pop: #e6a598;
-            /* Muted Coral for small accents */
-            --accent-light: #fdf5f2;
-            /* Very light warm background */
-            --white: #ffffff;
-            --border-color: #eaddcf;
-            --font-main: 'Zen Maru Gothic', 'Noto Sans JP', sans-serif;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: var(--font-main);
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            line-height: 1.8;
-            font-weight: 400;
-        }
-
-        h1,
-        h2,
-        h3 {
-            color: var(--heading-color);
-            font-weight: 500;
-            line-height: 1.4;
-        }
-
-        a {
-            color: var(--heading-color);
-            text-decoration: none;
-            transition: opacity 0.3s;
-        }
-
-        a:hover {
-            opacity: 0.7;
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header */
-        .site-header {
-            padding: 30px 0;
-            background-color: var(--bg-color);
-            display: flex;
-            justify-content: center;
-            /* Centered layout */
-            align-items: center;
-            border-bottom: 1px solid transparent;
-            /* Placeholder */
-        }
-
-        .site-header .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.6rem;
-            letter-spacing: 0.1em;
-            color: var(--heading-color);
-            margin-bottom: 15px;
-        }
-
-        .main-nav ul {
-            display: flex;
-            gap: 20px;
-            font-size: 0.9rem;
-        }
-
-        .main-nav a {
-            color: var(--text-color);
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 60px 0 80px;
-            text-align: center;
-            /* Soft warm gradient */
-            background: linear-gradient(to bottom, var(--bg-color), var(--white));
-        }
-
-        .catch-copy {
-            font-size: 1.5rem;
-            font-weight: 500;
-            margin-bottom: 40px;
-            color: var(--heading-color);
-            letter-spacing: 0.05em;
-            line-height: 1.6;
-        }
-
-        .intro-text p {
-            margin-bottom: 20px;
-        }
-
-        /* Common Section Styles */
-        .section {
-            padding: 80px 0;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 1.5rem;
-            margin-bottom: 50px;
-            position: relative;
-            padding-bottom: 15px;
-        }
-
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 30px;
-            height: 3px;
-            background-color: var(--accent-pop);
-            /* Muted coral accent */
-            border-radius: 3px;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        /* Profile */
-        .profile {
-            background-color: var(--white);
-            border-radius: 20px;
-            max-width: 840px;
-            margin: 0 auto 40px;
-            border: 1px solid var(--border-color);
-            /* Subtle warm border */
-        }
-
-        .profile-content {
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        .profile-content p {
-            margin-bottom: 24px;
-        }
-
-        /* Qualifications & History */
-        .qualifications {
-            background-color: var(--bg-color);
-        }
-
-        .info-group {
-            margin-bottom: 50px;
-        }
-
-        .info-group h3 {
-            font-size: 1.1rem;
-            margin-bottom: 20px;
-            color: var(--heading-color);
-            text-align: center;
-            position: relative;
-            display: inline-block;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        /* Little decorative dots for h3 */
-        .info-group h3::before,
-        .info-group h3::after {
-            content: '・';
-            color: var(--accent-pop);
-        }
-
-        .info-group ul {
-            max-width: 600px;
-            margin: 0 auto;
-            background: var(--white);
-            padding: 30px;
-            border-radius: 12px;
-            border: 1px solid var(--border-color);
-        }
-
-        .info-group li {
-            margin-bottom: 10px;
-            padding-left: 1.2em;
-            position: relative;
-        }
-
-        .info-group li::before {
-            content: '';
-            display: block;
-            width: 6px;
-            height: 6px;
-            background-color: var(--accent-color);
-            border-radius: 50%;
-            position: absolute;
-            left: 0;
-            top: 0.6em;
-        }
-
-        .timeline li {
-            margin-bottom: 15px;
-        }
-
-        /* Fields */
-        .fields {
-            background-color: var(--white);
-        }
-
-        .fields-intro {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .fields-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 40px;
-        }
-
-        .fields-list li {
-            background-color: var(--accent-light);
-            color: var(--text-color);
-            padding: 12px 24px;
-            border-radius: 50px;
-            font-size: 0.95rem;
-            border: 1px solid var(--border-color);
-        }
-
-        .fields-note {
-            font-size: 0.85rem;
-            color: var(--text-color);
-            opacity: 0.8;
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        /* Contact Section */
-        .contact {
-            background-color: var(--bg-color);
-            padding-top: 60px;
-            padding-bottom: 100px;
-        }
-
-        .contact-intro {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-        }
-
-        .contact-intro .note {
-            margin-top: 20px;
-            color: var(--heading-color);
-            font-weight: 500;
-        }
-
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-            background: var(--white);
-            padding: 40px;
-            border-radius: 15px;
-            border: 1px solid var(--border-color);
-        }
-
-        .form-group {
-            margin-bottom: 25px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-            color: var(--heading-color);
-        }
-
-        .required-badge {
-            display: inline-block;
-            background-color: var(--accent-pop);
-            color: var(--white);
-            font-size: 0.7rem;
-            padding: 2px 6px;
-            border-radius: 4px;
-            margin-left: 8px;
-            vertical-align: middle;
-        }
-
-        .optional-badge {
-            display: inline-block;
-            background-color: #ddd;
-            color: #666;
-            font-size: 0.7rem;
-            padding: 2px 6px;
-            border-radius: 4px;
-            margin-left: 8px;
-            vertical-align: middle;
-        }
-
-        .form-group input[type="text"],
-        .form-group input[type="email"],
-        .form-group input[type="tel"],
-        .form-group textarea,
-        .form-group select {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            font-family: inherit;
-            font-size: 1rem;
-            background-color: #fdfdfd;
-            transition: border-color 0.3s;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group select:focus {
-            outline: none;
-            border-color: var(--accent-pop);
-        }
-
-        .radio-group label {
-            display: inline-block;
-            margin-right: 20px;
-            font-weight: 400;
-            cursor: pointer;
-        }
-
-        .radio-group input {
-            margin-right: 5px;
-        }
-
-        .submit-btn-container {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .submit-btn {
-            background-color: var(--heading-color);
-            color: var(--white);
-            border: none;
-            padding: 15px 50px;
-            font-size: 1rem;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            font-family: inherit;
-        }
-
-        .submit-btn:hover {
-            background-color: #7a5a57;
-            opacity: 1;
-            /* Override default hover */
-        }
-
-        /* Footer */
-        .site-footer {
-            background-color: #8c6a66;
-            /* Matching heading color but slightly different */
-            color: var(--white);
-            text-align: center;
-            padding: 40px 0;
-            font-size: 0.8rem;
-        }
-
-        .footer-nav {
-            margin-bottom: 20px;
-        }
-
-        .footer-nav ul {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .footer-nav a {
-            color: var(--white);
-        }
-
-
-        /* Responsive */
-        @media (max-width: 600px) {
-            .site-header .container {
-                align-items: center;
-            }
-
-            .logo {
-                font-size: 1.4rem;
-            }
-
-            .main-nav ul {
-                gap: 15px;
-                font-size: 0.8rem;
-            }
-
-            .hero {
-                padding: 40px 0 60px;
-            }
-
-            .section {
-                padding: 60px 0;
-            }
-
-            .contact-form {
-                padding: 25px;
-            }
-
-            .submit-btn {
-                width: 100%;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-<body id="top">
-    <header class="site-header">
-        <div class="container">
-            <h1 class="logo">ことばらぼ ほっぺ</h1>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#profile">プロフィール</a></li>
-                    <li><a href="#fields">対応分野</a></li>
-                    <li><a href="#contact">お問い合わせ</a></li>
-                </ul>
-            </nav>
-        </div>
+<body>
+    <header class="header">
+        <a href="#" class="logo">ことばらぼ ほっぺ</a>
+        <nav class="nav">
+            <ul>
+                <li><a href="#concept">想い</a></li>
+                <li><a href="#services">支援内容</a></li>
+                <li><a href="#profile">講師紹介</a></li>
+                <li><a href="#fee">料金</a></li>
+                <li><a href="#contact">アクセス</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="hero">
-            <div class="container">
-                <p class="catch-copy">子どものことばに、そっと寄り添う<br>言語聴覚士 ことばらぼ ほっぺ</p>
-                <div class="intro-text">
-                    <p>ことばらぼ ほっぺは、堺市を拠点に<br>
-                        大阪府下の児童発達支援施設などに訪問し、<br>
-                        子どものことばやコミュニケーションの発達を支える<br>
-                        言語聴覚士の訪問支援です。</p>
-                    <p>現在は、施設への出張による個別支援を中心に、<br>
-                        子ども一人ひとりの特性や育ちを大切にしながら、<br>
-                        施設の先生方と連携し、現場に寄り添った支援を行っています。</p>
+            <div class="hero-content fade-up">
+                <h2 class="hero-title">お子さまの<br><span>「できた！」</span>を一緒に</h2>
+                <p class="hero-desc">「言葉がゆっくりかも…」「お友達と遊べるかな？」<br>そんな不安に寄り添い、お子さまの成長を温かくサポートします。</p>
+                <a href="#contact" class="btn btn-primary">無料相談はこちら</a>
+            </div>
+            <div class="hero-image fade-up">
+                <div class="hero-blob"></div>
+                <img src="assets/hoppe_hero.png" alt="ことばらぼ ほっぺのイメージ">
+            </div>
+        </section>
+
+        <!-- Concept -->
+        <section id="concept" class="section">
+            <div class="section-header fade-up">
+                <span class="eng-title">Concept</span>
+                <h2 class="section-title">私たちの想い</h2>
+            </div>
+            <div class="concept-wrapper fade-up">
+                <p>
+                    子育てをしていると、「うちの子、少し発達がゆっくりかも？」と<br>
+                    不安に思うこと、ありますよね。<br><br>
+                    「ことばらぼ ほっぺ」は、発達支援が必要なお子さまとご家族が、<br>
+                    ふっと肩の力を抜いて安心できる場所を目指しています。<br><br>
+                    お子さまの「楽しい！」「伝えたい！」という前向きな気持ちを大切にしながら、<br>
+                    国家資格を持つ専門スタッフが、一人ひとりのペースに合わせて丁寧にサポートします。
+                </p>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="services" class="section">
+            <div class="section-header fade-up">
+                <span class="eng-title">Our Services</span>
+                <h2 class="section-title">支援内容</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-up">
+                    <div class="service-icon">🐣</div>
+                    <h3 class="service-title">言葉のゆっくりさんへ</h3>
+                    <p>「言葉がなかなか出ない」「指差しをしない」といったご相談に。<br>お子さまの興味に合わせた遊びを通して、言葉の根っこを育てます。</p>
+                </div>
+                <div class="service-card fade-up" style="transition-delay: 0.1s;">
+                    <div class="service-icon">🧩</div>
+                    <h3 class="service-title">やりとり・遊びのサポート</h3>
+                    <p>「おもちゃを貸してと言えない」「お友達とうまく遊べない」など。<br>楽しい活動のなかで、人と関わる力や社会性を身につけていきます。</p>
+                </div>
+                <div class="service-card fade-up" style="transition-delay: 0.2s;">
+                    <div class="service-icon">🗣️</div>
+                    <h3 class="service-title">お話し・発音のサポート</h3>
+                    <p>「『さかな』が『たかな』になる」など、発音が気になるときに。<br>お口や舌の使い方を、無理なく楽しく練習します。</p>
                 </div>
             </div>
         </section>
 
-        <section id="profile" class="profile section">
-            <div class="container">
-                <h2 class="section-title">プロフィール</h2>
-                <div class="profile-content">
-                    <p>言語聴覚士として、小児から成人まで、ことばやコミュニケーションに関わる支援に携わってきました。<br>
-                        これまで、児童発達支援施設などの現場を中心に、子ども一人ひとりの発達段階や特性に応じた関わりを大切にしながら支援を行ってきました。</p>
-                    <p>また、成人の方のことばやコミュニケーションの支援に関わった経験から、<br>
-                        「ことば」はその人の生活や人とのつながりに深く関わるものであると実感しています。<br>
-                        そうした視点を大切にしながら、子どもの支援においても、今だけでなく将来につながる関わりを意識しています。</p>
-                    <p>ことばの発達は、子ども自身の力だけでなく、周囲の関わりや環境によって育っていくものだと考えています。<br>
-                        そのため、子どもへの直接的な支援だけでなく、施設の先生方と連携し、現場全体で子どもを支える視点を大切にしています。</p>
-                    <p>現在は、児童発達支援施設等への訪問支援を中心に活動しています。<br>
-                        今後は、より一人ひとりに丁寧に向き合える支援の形についても、準備を進めていく予定です。</p>
+        <!-- Profile -->
+        <section id="profile" class="section">
+            <div class="section-header fade-up">
+                <span class="eng-title">Therapist</span>
+                <h2 class="section-title">講師紹介</h2>
+            </div>
+            <div class="profile-wrapper fade-up">
+                <div class="profile-img">
+                    👨‍⚕️
+                </div>
+                <div class="profile-info">
+                    <h3>大西 晃平</h3>
+                    <span class="role">言語聴覚士（ことば・発達の専門家）</span>
+                    <p>
+                        ことばの教室での言語発達の評価や訓練を中心に、地域の放課後等デイサービスへの施設訪問も行っています。また、「いわたコトバのそうだん室」とも訪問連携を図りながら、お子さまの生活を多角的にサポートしています。<br><br>
+                        「この子にはどんな関わりが合うかな？」と、ご家族と一緒に考え、成長を喜び合える教室でありたいと思っています。些細なことでも、一人で抱え込まずにお話しにきてくださいね。
+                    </p>
                 </div>
             </div>
         </section>
 
-        <section class="qualifications section">
-            <div class="container">
-                <h2 class="section-title">資格・経歴</h2>
-
-                <div class="info-group">
-                    <h3>資格</h3>
-                    <ul>
-                        <li>言語聴覚士</li>
-                        <li>日本語教員資格</li>
-                    </ul>
-                </div>
-
-                <div class="info-group">
-                    <h3>経歴</h3>
-                    <ul class="timeline">
-                        <li>大学にて日本語教育を学び、日本語教員資格を取得</li>
-                        <li>専門学校にて言語聴覚士資格を取得</li>
-                        <li>成人領域の病院に勤務</li>
-                        <li>その後、児童発達支援施設に勤務</li>
-                        <li>現在は、児童発達支援施設等へ訪問し支援を行っている</li>
-                    </ul>
-                </div>
-
-                <div class="info-group">
-                    <h3>所属</h3>
-                    <ul>
-                        <li>一般社団法人 日本言語聴覚士協会</li>
-                        <li>大阪府言語聴覚士会</li>
-                        <li>児童発達支援を考えるSTの会</li>
-                    </ul>
-                </div>
-
-                <div class="info-group">
-                    <h3>研修等</h3>
-                    <ul>
-                        <li>強度行動障害 支援者養成研修（基礎研修）修了</li>
-                        <li>マカトンサイン研修 修了</li>
-                    </ul>
-                </div>
+        <!-- Fee -->
+        <section id="fee" class="section">
+            <div class="section-header fade-up">
+                <span class="eng-title">Pricing</span>
+                <h2 class="section-title">料金案内</h2>
             </div>
+            <div class="pricing-table-wrapper fade-up">
+                <table class="pricing-table">
+                    <tr>
+                        <th>
+                            初回ご相談<br>
+                            <!-- ▼ 時間を変更する場合はこちらのテキストを修正してください ▼ -->
+                            <span style="font-size:0.85em; font-weight:normal;">(言語検査あり、60分)</span>
+                        </th>
+                        <td>
+                            <!-- ▼ 料金を変更する場合はこちらの数字を修正してください ▼ -->
+                            <strong>8,000円</strong> <span style="font-size:0.85em;">(税込)</span><br>
+                            お困りごとのヒアリングと、今後の見通しについてお話しします。
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            個別レッスン<br>
+                            <!-- ▼ 時間を変更する場合はこちらのテキストを修正してください ▼ -->
+                            <span style="font-size:0.85em; font-weight:normal;">(45分)</span>
+                        </th>
+                        <td>
+                            <!-- ▼ 料金を変更する場合はこちらの数字を修正してください ▼ -->
+                            <strong>6,500円</strong> <span style="font-size:0.85em;">(税込)</span><br>
+                            お子様と1対1での指導と、保護者の方へのフィードバックを行います。
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <p class="price-note fade-up">※ 入会金・年会費はいただいておりません。</p>
         </section>
 
-        <section id="fields" class="fields section">
-            <div class="container">
-                <h2 class="section-title">対応分野</h2>
-                <div class="fields-intro">
-                    <p>ことばらぼ ほっぺでは、<br>
-                        児童発達支援施設等への訪問を通して、以下のような分野に関わっています。</p>
+        <!-- Contact/Access -->
+        <section id="contact" class="section">
+            <div class="section-header fade-up">
+                <span class="eng-title">Contact & Access</span>
+                <h2 class="section-title">アクセス・お問い合わせ</h2>
+            </div>
+            <div class="contact-wrapper fade-up">
+                <div class="contact-info">
+                    <p><strong>ことばの教室 ことばらぼ ほっぺ</strong></p>
+                    <br>
+                    <p>〒599-8124<br>堺市東区南野田554番地46</p>
+                    <p>営業時間: 月〜土 9:00 - 18:00 (日・祝休み)</p>
                 </div>
-                <ul class="fields-list">
-                    <li>ことばの発達全般に関する支援</li>
-                    <li>構音・発音に関する支援</li>
-                    <li>コミュニケーションの取りづらさへの支援</li>
-                    <li>発達特性に応じた関わり方の検討</li>
-                    <li>マカトンサイン等を用いたコミュニケーション支援</li>
-                    <li>支援方法や関わり方についての職員への助言・共有</li>
-                </ul>
-                <div class="fields-note">
-                    <p>※医療行為や個別療育を目的とした支援は行っていません。</p>
-                    <p>※現在は、施設訪問による支援を中心に活動しています。</p>
-                </div>
+                <a href="mailto:info@example.com" class="btn btn-primary" style="background:#fff; color:var(--color-accent);">ご予約・お問い合わせはこちら</a>
             </div>
         </section>
+    </main>
 
-        <section id="contact" class="contact section">
-            <div class="container">
-                <h2 class="section-title">お問い合わせ</h2>
-                <div class="contact-intro">
-                    <p>ことばらぼ ほっぺへのお問い合わせは、<br>
-                        施設訪問支援に関するご相談を中心に受け付けています。</p>
-                    <p class="note">現在、個別支援・自費リハビリは行っておりません。<br>
-                        内容によっては、ご希望に添えない場合があることをあらかじめご了承ください。</p>
-                </div>
-
-               <section id="contact">
-  <h2>お問い合わせ</h2>
-
-  <p>
-    ことばやコミュニケーションに関するご相談、訪問支援についてのご質問などは、
-    下記フォームよりお気軽にお問い合わせください。<br>
-    内容を確認のうえ、2営業日以内にご連絡いたします。
-  </p>
-
-  <iframe
-    src="https://docs.google.com/forms/d/e/1FAIpQLScEuy3RLvgeqhiqKU1KmtsMRRtbrWPQOF6mmbxiV4B4FSJJ8A/viewform?usp=header=true"
-    width="100%"
-    height="900"
-    frameborder="0"
-    marginheight="0"
-    marginwidth="0">
-    読み込んでいます…
-  </iframe>
-
-  <p style="font-size: 0.9em; margin-top: 1em;">
-    ※ フォーム送信後、自動返信メールが届かない場合は、迷惑メールフォルダをご確認ください。
-  </p>
-</section>
-
-            <p class="copyright">&copy; Kotoba Lab Hoppe</p>
-        </div>
+    <footer class="footer">
+        <p>&copy; 2026 ことばらぼ ほっぺ All rights reserved.</p>
     </footer>
+
+    <!-- JS for scroll animation and interactive effects -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Setup intersection observer for scroll animations
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all elements with .fade-up
+            document.querySelectorAll('.fade-up').forEach((el) => {
+                observer.observe(el);
+            });
+        });
+    </script>
 </body>
-
 </html>
-
-
-
-
-
