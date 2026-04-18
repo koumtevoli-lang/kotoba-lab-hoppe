@@ -187,8 +187,8 @@ h1, h2, h3, h4 {
 }
 
 .logo-img {
-    width: 130px;
-    height: 130px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
@@ -397,6 +397,10 @@ h1, h2, h3, h4 {
     font-weight: 700;
 }
 
+.badge-primary {
+    background: var(--color-primary);
+}
+
 .profile-bio {
     font-size: 1.15rem;
     margin-bottom: 24px;
@@ -404,6 +408,38 @@ h1, h2, h3, h4 {
 
 .profile-bio:last-child {
     margin-bottom: 0;
+}
+
+.profile-list {
+    list-style: none;
+    margin: 0 0 24px 0;
+    padding: 24px;
+    background: #fff;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.profile-list li {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.profile-list li:last-child {
+    margin-bottom: 0;
+}
+
+.profile-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 8px;
+    height: 8px;
+    background: var(--color-secondary);
+    border-radius: 50%;
 }
 
 /* Pricing Grid */
@@ -519,90 +555,58 @@ h1, h2, h3, h4 {
     transform: translateY(-3px);
 }
 
-/* Footer */
+/* Footer & Social Links */
 .footer {
     background: var(--text-main);
     color: #fff;
-    padding: 40px 0;
+    padding: 60px 0 30px;
     text-align: center;
 }
 
-/* Animations */
-.fade-up {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1.2s cubic-bezier(0.2, 0.8, 0.2, 1), transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+.footer-social {
+    margin-bottom: 50px;
+    padding: 40px 30px;
+    background: rgba(255, 255, 255, 0.08); /* 落ち着いたダーク背景に明るさのレイヤーを重ねて区切る */
+    border-radius: var(--radius-lg);
 }
 
-.fade-up.visible {
-    opacity: 1;
-    transform: translateY(0);
+.social-message {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    font-weight: 500;
 }
 
-/* Responsive (Smartphones) */
-@media (max-width: 850px) {
-    .header-container {
-        justify-content: center;
-    }
-    
-    .nav {
-        display: none;
-    }
-    
-    .hide-sp {
-        display: none;
-    }
-    
-    .hero {
-        padding: 120px 0 60px;
-    }
-    
-    .hero-inner {
-        flex-direction: column-reverse;
-        text-align: center;
-        gap: 40px;
-    }
-    
-    .hero-title {
-        font-size: 2.4rem;
-    }
-    
-    .hero-title .highlight::after {
-        left: 0; width: 100%;
-    }
-    
-    .hero-img {
-        max-width: 85%;
-    }
-    
-    .section {
-        padding: 70px 0;
-    }
-    
-    .concept-card {
-        padding: 40px 20px;
-    }
-    
-    .profile-card {
-        flex-direction: column;
-        text-align: center;
-        gap: 30px;
-        padding: 40px 20px;
-    }
-    
-    .profile-name {
-        justify-content: center;
-    }
-    
-    .modern-table th, .modern-table td {
-        display: block;
-        width: 100%;
-        padding: 24px;
-        border-right: none;
-    }
-    
-    .modern-table th {
-        background: #FAFAFA;
-        border-bottom: none;
-    }
-    
+.social-btns {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.btn-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 18px 40px;
+    background: var(--bg-warm); /* ベージュ・くすみカラーで安心感のあるボタン */
+    color: var(--text-main);
+    border-radius: var(--radius-pill);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    flex: 1;
+    max-width: 360px;
+    border: 2px solid transparent;
+}
+
+.btn-social:hover {
+    background: #fff;
+    border-color: rgba(255, 179, 133, 0.5); /* ホバー時にうっすら色づく */
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    color: var(--text-main);
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.6);
