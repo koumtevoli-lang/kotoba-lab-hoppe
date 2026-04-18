@@ -618,6 +618,7 @@ h1, h2, h3, h4 {
     left: 10px;
     transition: all 0.3s ease-in-out;
     border-radius: 2px;
+    pointer-events: none;
 }
 
 .hamburger span:nth-child(1) { top: 14px; }
@@ -780,4 +781,3 @@ h1, h2, h3, h4 {
     .cta-box h2 {
         font-size: 1.8rem;
     }
-}
