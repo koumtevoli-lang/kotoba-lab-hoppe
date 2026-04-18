@@ -398,7 +398,7 @@ h1, h2, h3, h4 {
 .profile-name {
     display: flex;
     flex-direction: column; /* これを追加：中身を縦に並べる */
-    align-items: flex-start; /* これを修正：左寄せにする */
+    align-items: center; /* 左寄せから中央ぞろえに変更 */
     gap: 8px;               /* 名前とバッジの間の隙間（数値はお好みで） */
     margin-bottom: 24px;
 }
