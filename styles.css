@@ -423,7 +423,9 @@ h1, h2, h3, h4 {
 
 .profile-badges {
     display: flex;
-    gap: 8px;
+    flex-direction: row;   /* ←これを明示的に追加 */
+    justify-content: center; /* ←中央に揃える */
+    gap: 10px;
     flex-wrap: nowrap;
 }
 
