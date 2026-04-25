@@ -387,22 +387,18 @@ h1, h2, h3, h4 {
     flex-shrink: 0;
     background: #fff;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 5rem;
     box-shadow: var(--shadow-sm);
     border: 6px solid #fff;
+    object-fit: cover;
+    object-position: center;
 }
 
 .profile-name {
     display: flex;
-    flex-direction: column; /* これを追加：中身を縦に並べる */
-    align-items: center; /* 左寄せから中央ぞろえに変更 */
-    gap: 8px;               /* 名前とバッジの間の隙間（数値はお好みで） */
+    align-items: center;
+    gap: 16px;
     margin-bottom: 24px;
-}
-
+    flex-wrap: wrap;
 }
 
 .profile-name h3 {
@@ -783,3 +779,4 @@ h1, h2, h3, h4 {
     .cta-box h2 {
         font-size: 1.8rem;
     }
+}
