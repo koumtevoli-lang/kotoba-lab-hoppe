@@ -416,17 +416,15 @@ h1, h2, h3, h4 {
 .profile-name {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;   /* ←これが中央寄せの本体 */
     gap: 10px;
-    margin-bottom: 24px;
+    text-align: center;    /* ←文字も中央に */
 }
 
 .profile-badges {
     display: flex;
-    flex-direction: row;   /* ←これを明示的に追加 */
-    justify-content: center; /* ←中央に揃える */
     gap: 10px;
-    flex-wrap: nowrap;
+    justify-content: center;  /* ←横方向の中央揃え */
 }
 
 .profile-name h3 {
