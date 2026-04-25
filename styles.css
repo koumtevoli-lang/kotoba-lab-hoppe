@@ -402,19 +402,28 @@ h1, h2, h3, h4 {
 }
 
 .profile-caption {
-    background-color: #FFF0E5;
-    color: var(--color-primary);
+    background-color: #FFF2E8;
+    color: #E27B42;
     font-size: 0.85rem;
-    padding: 6px 16px;
+    padding: 4px 16px;
     border-radius: var(--radius-pill);
+    font-family: 'Zen Maru Gothic', sans-serif;
     font-weight: 700;
+    white-space: nowrap;
+    border: 2px solid #FFDDBF;
 }
 
 .profile-name {
     display: flex;
-    align-items: center;
-    gap: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
     margin-bottom: 24px;
+}
+
+.profile-badges {
+    display: flex;
+    gap: 8px;
     flex-wrap: nowrap;
 }
 
@@ -776,7 +785,7 @@ h1, h2, h3, h4 {
     }
     
     .profile-name {
-        justify-content: center;
+        align-items: center;
         gap: 8px;
     }
     
